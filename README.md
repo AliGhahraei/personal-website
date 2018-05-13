@@ -10,8 +10,6 @@ are in the *src* branch of this repository.
 You should also have the site's theme in the correct location. These settings are near the bottom of
 pelicanconf.py and look like this:
 
-pelicanconf.py
-
 ```python3
 USER_THEME_PATH = expanduser(join('local, path', 'to', 'theme'))
 THEME_NAME = 'site_theme'

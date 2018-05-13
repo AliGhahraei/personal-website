@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
+#pylint: disable=missing-docstring
 from __future__ import unicode_literals
+from os.path import expanduser, join
 
 AUTHOR = 'Ali Ghahraei Figueroa'
 SITENAME = 'Ali Ghahraei Figueroa'
@@ -33,6 +35,7 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-DEFAULT_DATE = 'fs'
 IGNORE_FILES = ['.#*', '__pycache__']
-THEME = 'notmyidea'
+USER_THEME_PATH = expanduser(join('~', 'g'))
+THEME_NAME = 'attila'
+THEME = join(USER_THEME_PATH, THEME_NAME)

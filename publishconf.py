@@ -14,7 +14,7 @@ from pelicanconf import *
 SITEURL = ''
 RELATIVE_URLS = False
 
-#DELETE_OUTPUT_DIRECTORY = True
+DELETE_OUTPUT_DIRECTORY = True
 
 #FEED_ALL_ATOM = 'feeds/all.atom.xml'
 #CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'

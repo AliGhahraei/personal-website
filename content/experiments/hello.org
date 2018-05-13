@@ -1,0 +1,17 @@
+#+TITLE: Hello Pelican (Org)
+#+DATE: 2018-03-20
+#+PROPERTY: SUMMARY THis is a test article using Org. Hello, Pelican!
+
+This is a test article using Org. Hello, Pelican!
+
+* A cool Org headline
+** Another one!
+*** TODO Something pending!
+*** DONE Something done
+    CLOSED: [2018-05-13 Sun 13:31]
+
+And a table unapologetically stolen from [[https://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor][The Org Manual]]
+| Name  | Phone | Age |
+|-------+-------+-----|
+| Peter |  1234 |  17 |
+| Anna  |  4321 |  25 |

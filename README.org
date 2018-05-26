@@ -22,7 +22,7 @@ ORG_READER_EMACS_LOCATION = ('/Applications/Emacs.app/Contents/MacOS/Emacs' if S
                              else '/usr/bin/emacs')
 #+END_SRC
 
-So modify your USER_THEME_PATH (/my/local/path/to/themes/ in the example) and PLUGIN_PATHS
-(/my/local/path/to/plugins/, etc.) so they point to your local pelican directories. If you don't
+So modify your USER_THEME_PATH (/local/path/to/themes/ in the example) and PLUGIN_PATHS
+(/local/path/to/plugins/, etc.) so they point to your local pelican directories. If you don't
 have any of these, you should clone [[https://github.com/getpelican/pelican-themes][the pelican themes]] and [[https://github.com/getpelican/pelican-plugins][the pelican plugins]] repositories and use
 those directories.

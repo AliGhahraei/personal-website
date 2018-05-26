@@ -27,10 +27,12 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
          ('Jinja2', 'http://jinja.pocoo.org/'),)
+
 
 # Social widget
 SOCIAL = (('LinkedIn', 'https://www.linkedin.com/in/ali-ghahraei-figueroa-89836091/'),
@@ -44,10 +46,19 @@ IGNORE_FILES = ['.#*', '__pycache__']
 PLUGINS = ['org_reader']
 
 
+#Theme
 USER_THEME_PATH = expanduser(join('~', 'g', 'pelican-themes'))
 THEME_NAME = 'nest'
 THEME = join(USER_THEME_PATH, THEME_NAME)
 
+NEST_CSS_MINIFY = True
+NEST_INDEX_HEAD_TITLE = 'Homepage'
+NEST_INDEX_HEADER_TITLE = 'Me + programming'
+NEST_INDEX_HEADER_SUBTITLE = 'My small corner of the internet'
+NEST_INDEX_CONTENT_TITLE = 'Recent Posts'
+
+
+# Plugins
 PLUGIN_PATHS = [expanduser(join('~', 'g', 'pelican-plugins'))]
 ORG_READER_EMACS_LOCATION = ('/Applications/Emacs.app/Contents/MacOS/Emacs' if SYSTEM == 'Darwin'
                              else '/usr/bin/emacs')

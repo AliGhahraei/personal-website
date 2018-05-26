@@ -11,7 +11,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = ''
+SITEURL = 'https://alighahraei.github.io'
 RELATIVE_URLS = False
 
 DELETE_OUTPUT_DIRECTORY = True
@@ -21,5 +21,5 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
+DISQUS_SITENAME = "alighahraei"
 #GOOGLE_ANALYTICS = ""

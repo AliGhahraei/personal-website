@@ -1,25 +1,28 @@
 * AliGhahraei.github.io
 Personal website.
 
-This site is generated with the help of [[https://blog.getpelican.com/][Pelican]]. Its source files are in the /src/ branch of this
-repository.
+This site is generated with the help of [[https://blog.getpelican.com/][Pelican]]. /Master/ has published output only (so you
+probably don't want to read it) and source files are in the /src/ branch of this repository.
 
 ** Requirements
 - Python 3
 
-You should also have the site's theme in the correct location and should adjust the plugin settings.All this configuration is near the bottom of pelicanconf.py and looks like this:
-These configurations are near the bottom of pelicanconf.py and look like this:
+You should also have the site's theme in the correct location and should adjust the plugin settings
+if you want to build the site. These configurations are near the bottom of pelicanconf.py and look
+like this:
 
 #+NAME: pelicanconf.py
 #+BEGIN_SRC python
-USER_THEME_PATH = expanduser(join('local, path', 'to', 'theme'))
+USER_THEME_PATH = expanduser(join('local', 'path', 'to', 'themes'))
 THEME_NAME = 'site_theme'
 THEME = join(USER_THEME_PATH, THEME_NAME)
 
-PLUGIN_PATHS = [expanduser(join('~', 'g', 'pelican-plugins'))]
+PLUGIN_PATHS = [expanduser(join('local', 'path', 'to', 'plugins')), ...]
 ORG_READER_EMACS_LOCATION = ('/Applications/Emacs.app/Contents/MacOS/Emacs' if SYSTEM == 'Darwin'
                              else '/usr/bin/emacs')
 #+END_SRC
 
-So place the theme specified by THEME_NAME (/site_theme/ in the example) in USER_THEME_PATH
-(/local/path/to/theme/) and modify PLUGIN_PATHS or any other setting if necessary
+So modify your USER_THEME_PATH (/my/local/path/to/themes/ in the example) and PLUGIN_PATHS
+(/my/local/path/to/plugins/, etc.) so they point to your local pelican directories. If you don't
+have any of these, you should clone [[https://github.com/getpelican/pelican-themes][the pelican themes]] and [[https://github.com/getpelican/pelican-plugins][the pelican plugins]] repositories and use
+those directories.

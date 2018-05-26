@@ -7,7 +7,7 @@ from os.path import expanduser, join, dirname
 
 SYSTEM = system()
 
-AUTHOR = 'Ali Ghahraei Figueroa'
+AUTHOR = 'Ali Ghahraei'
 SITENAME = 'Ali Ghahraei Figueroa'
 SITEURL = ''
 
@@ -20,6 +20,9 @@ DEFAULT_LANG = 'en'
 USE_FOLDER_AS_CATEGORY = True
 DISPLAY_CATEGORIES_ON_MENU = True
 
+AUTHOR_URL = ''
+AUTHOR_SAVE_AS = ''
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -27,17 +30,17 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-
 # Blogroll
 LINKS = (
     ('Python.org', 'http://python.org/'),
     ('Jinja2', 'http://jinja.pocoo.org/'),
 )
 
-
 # Social widget
-SOCIAL = (('LinkedIn', 'https://www.linkedin.com/in/ali-ghahraei-figueroa-89836091/'),
-          ('GitHub', 'https://github.com/'),)
+SOCIAL = (
+    ('GitHub', 'https://github.com/'),
+    ('LinkedIn', 'https://www.linkedin.com/in/ali-ghahraei-figueroa-89836091/'),
+)
 
 DEFAULT_PAGINATION = 10
 

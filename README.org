@@ -1,8 +1,5 @@
 * AliGhahraei.github.io
-Personal website.
-
-This site is generated with the help of [[https://blog.getpelican.com/][Pelican]]. /Master/ has published output only (so you
-probably don't want to read it) and source files are in the /src/ branch of this repository.
+Personal website powered by [[https://blog.getpelican.com/][Pelican]].
 
 ** Requirements
 - Python 3

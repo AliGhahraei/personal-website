@@ -1,8 +1,15 @@
 * AliGhahraei.github.io
 Personal website powered by [[https://blog.getpelican.com/][Pelican]].
 
-** Requirements
+** Development Requirements
 - Python 3
+- [[https://docs.pipenv.org/][Pipenv]]
+- Pipfile dependencies
+
+To install the Pipfile dependencies just run the following:
+#+BEGIN_SRC
+$ pipenv install
+#+END_SRC
 
 You should also have the site's theme in the correct location and should adjust the plugin settings
 if you want to build the site. These configurations are near the bottom of pelicanconf.py and look

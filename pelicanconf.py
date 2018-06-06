@@ -3,6 +3,7 @@
 #pylint: disable=missing-docstring
 from __future__ import unicode_literals
 from platform import system
+from os import environ
 from os.path import expanduser, join, dirname
 
 SYSTEM = system()
@@ -52,7 +53,7 @@ SOCIAL = (
 
 
 #Theme
-USER_THEME_PATH = expanduser(join('~', 'g', 'pelican-themes'))
+USER_THEME_PATH = expanduser(environ['PELICAN_THEMES_PATH'])
 THEME_NAME = 'nest'
 THEME = join(USER_THEME_PATH, THEME_NAME)
 
@@ -64,7 +65,7 @@ NEST_INDEX_CONTENT_TITLE = 'Recent Posts'
 
 
 # Plugins
-PLUGIN_PATHS = [expanduser(join('~', 'g', 'pelican-plugins'))]
+PLUGIN_PATHS = [expanduser(environ['PELICAN_PLUGINS_PATH'])]
 PLUGINS = ['org_reader']
 
 ORG_READER_EMACS_LOCATION = ('/Applications/Emacs.app/Contents/MacOS/Emacs' if SYSTEM == 'Darwin'

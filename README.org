@@ -6,27 +6,13 @@ Personal website powered by [[https://blog.getpelican.com/][Pelican]].
 - [[https://docs.pipenv.org/][Pipenv]]
 - Pipfile dependencies
 
-To install the Pipfile dependencies just run the following:
+** Installation and usage
+To install all Pipfile dependencies just run the following:
 #+BEGIN_SRC
 $ pipenv install
 #+END_SRC
 
-You should also have the site's theme in the correct location and should adjust the plugin settings
-if you want to build the site. These configurations are near the bottom of pelicanconf.py and look
-like this:
-
-#+NAME: pelicanconf.py
-#+BEGIN_SRC python
-USER_THEME_PATH = expanduser(join('local', 'path', 'to', 'themes'))
-THEME_NAME = 'site_theme'
-THEME = join(USER_THEME_PATH, THEME_NAME)
-
-PLUGIN_PATHS = [expanduser(join('local', 'path', 'to', 'plugins')), ...]
-ORG_READER_EMACS_LOCATION = ('/Applications/Emacs.app/Contents/MacOS/Emacs' if SYSTEM == 'Darwin'
-                             else '/usr/bin/emacs')
-#+END_SRC
-
-So modify your USER_THEME_PATH (/local/path/to/themes/ in the example) and PLUGIN_PATHS
-(/local/path/to/plugins/, etc.) so they point to your local pelican directories. If you don't
-have any of these, you should clone [[https://github.com/getpelican/pelican-themes][the pelican themes]] and [[https://github.com/getpelican/pelican-plugins][the pelican plugins]] repositories and use
-those directories.
+You should also set the PELICAN_THEMES_PATH and PELICAN_PLUGINS_PATH environment variables in your
+shell. They should point to directories containing pelican themes and plugins respectively. If
+you don't have any of these, you should clone [[https://github.com/getpelican/pelican-themes][the pelican themes]] and [[https://github.com/getpelican/pelican-plugins][the pelican plugins]]
+repositories.

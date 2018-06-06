@@ -1,6 +1,7 @@
 image: python:latest
 
 variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache"
   PIPENV_CACHE_DIR: "$CI_PROJECT_DIR/.cache"
   PIPENV_VENV_IN_PROJECT: "true"
 
@@ -13,12 +14,11 @@ before_script:
   - python -V  # Print out python version for debugging
   - pip install pipenv
   - pipenv install --ignore-pipfile
-  - pipenv shell
 
 pages:
   stage: deploy
   script:
-  - make publish
+  - pipenv run make publish
   artifacts:
     paths:
     - public/

@@ -20,6 +20,8 @@ cache:
 before_script:
   - ./clone_or_pull_pelican_dirs.sh
 
+  - lsb_release -a  # To find out ubuntu version
+
   - add-apt-repository ppa:ubuntu-elisp/ppa -y
   - apt update
   - apt install emacs25

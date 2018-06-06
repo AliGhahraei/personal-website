@@ -20,11 +20,9 @@ cache:
 before_script:
   - ./clone_or_pull_pelican_dirs.sh
 
-  - lsb_release -a  # To find out ubuntu version
-
-  - add-apt-repository ppa:ubuntu-elisp/ppa -y
   - apt update
-  - apt install emacs25
+  - apt search emacs # Debugging
+  - apt install emacs24
 
   - python -V  # Print out python version for debugging
   - pip install pipenv

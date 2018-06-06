@@ -4,8 +4,7 @@ variables:
   PELICAN_THEMES_PATH: "$CI_PROJECT_DIR/themes"
   PELICAN_PLUGINS_PATH: "$CI_PROJECT_DIR/plugins"
 
-  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.pip_cache"
-  PIPENV_CACHE_DIR: "$CI_PROJECT_DIR/.cache"
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache"
   PIPENV_VENV_IN_PROJECT: "true"
 
 cache:
@@ -13,7 +12,6 @@ cache:
     - themes/
     - plugins/
 
-    - .pip_cache/
     - .cache/
     - .venv/
 

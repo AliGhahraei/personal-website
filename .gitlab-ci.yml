@@ -21,8 +21,7 @@ before_script:
   - ./clone_or_pull_pelican_dirs.sh
 
   - apt update
-  - apt search emacs # Debugging
-  - apt install emacs24
+  - apt install -y emacs25
 
   - python -V  # Print out python version for debugging
   - pip install pipenv

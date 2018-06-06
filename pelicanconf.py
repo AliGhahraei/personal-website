@@ -47,7 +47,7 @@ LINKS = (
 # Social widget
 SOCIAL = (
     ('GitHub', 'https://github.com/AliGhahraei'),
-    ('GitLab', 'https://gitlab.com/AliGhahraei'),
+    ('GitLab', 'https://gitlab.com/alighahraei'),
     ('LinkedIn', 'https://www.linkedin.com/in/ali-ghahraei-figueroa-89836091/'),
 )
 

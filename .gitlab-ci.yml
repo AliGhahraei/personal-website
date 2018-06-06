@@ -1,0 +1,25 @@
+image: python:latest
+
+variables:
+  PIPENV_CACHE_DIR: "$CI_PROJECT_DIR/.cache"
+  PIPENV_VENV_IN_PROJECT: true
+
+cache:
+  paths:
+    - .cache/
+    - .venv/
+
+before_script:
+  - python -V               # Print out python version for debugging
+  - pip install pipenv
+  - pipenv install
+
+pages:
+  script:
+  - make publish
+  artifacts:
+    paths:
+    - public/
+  only:
+  - master
+

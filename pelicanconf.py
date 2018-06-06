@@ -38,7 +38,8 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-    ('GitHub', 'https://github.com/'),
+    ('GitHub', 'https://github.com/AliGhahraei'),
+    ('GitLab', 'https://gitlab.com/AliGhahraei'),
     ('LinkedIn', 'https://www.linkedin.com/in/ali-ghahraei-figueroa-89836091/'),
 )
 
@@ -47,7 +48,6 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 IGNORE_FILES = ['.#*', '__pycache__']
-PLUGINS = ['org_reader']
 
 
 #Theme
@@ -64,6 +64,8 @@ NEST_INDEX_CONTENT_TITLE = 'Recent Posts'
 
 # Plugins
 PLUGIN_PATHS = [expanduser(join('~', 'g', 'pelican-plugins'))]
+PLUGINS = ['org_reader']
+
 ORG_READER_EMACS_LOCATION = ('/Applications/Emacs.app/Contents/MacOS/Emacs' if SYSTEM == 'Darwin'
                              else '/usr/bin/emacs')
 ORG_READER_EMACS_SETTINGS = join(dirname(__file__), 'export-settings.el')

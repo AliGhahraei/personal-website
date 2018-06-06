@@ -10,11 +10,13 @@ cache:
     - .venv/
 
 before_script:
-  - python -V               # Print out python version for debugging
+  - python -V  # Print out python version for debugging
   - pip install pipenv
-  - pipenv install
+  - pipenv install --ignore-pipfile
+  - pipenv shell
 
 pages:
+  stage: deploy
   script:
   - make publish
   artifacts:

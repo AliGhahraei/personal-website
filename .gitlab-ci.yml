@@ -33,6 +33,6 @@ pages:
   - pipenv run make publish
   artifacts:
     paths:
-    - public/
+    - output/
   only:
   - master

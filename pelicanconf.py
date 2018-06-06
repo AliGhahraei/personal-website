@@ -23,12 +23,19 @@ DISPLAY_CATEGORIES_ON_MENU = True
 AUTHOR_URL = ''
 AUTHOR_SAVE_AS = ''
 
+DEFAULT_PAGINATION = 10
+
+# Uncomment following line if you want document-relative URLs when developing
+#RELATIVE_URLS = True
+IGNORE_FILES = ['.#*', '__pycache__']
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
 
 # Blogroll
 LINKS = (
@@ -42,12 +49,6 @@ SOCIAL = (
     ('GitLab', 'https://gitlab.com/AliGhahraei'),
     ('LinkedIn', 'https://www.linkedin.com/in/ali-ghahraei-figueroa-89836091/'),
 )
-
-DEFAULT_PAGINATION = 10
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
-IGNORE_FILES = ['.#*', '__pycache__']
 
 
 #Theme

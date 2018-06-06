@@ -19,6 +19,9 @@ cache:
 
 before_script:
   - ./clone_or_pull_pelican_dirs.sh
+
+  - sudo add-apt-repository ppa:ubuntu-elisp/ppa
+  - sudo apt-get update
   - apt install emacs25
 
   - python -V  # Print out python version for debugging

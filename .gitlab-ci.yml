@@ -16,10 +16,10 @@ cache:
     - .venv/
 
 before_script:
-  - ./clone_or_pull_pelican_dirs.sh
+  - ./clone_or_pull_pelican_dirs.py
 
-  - apt update
-  - apt install -y emacs25
+  - apt -qq update
+  - apt -q install -y emacs25
 
   - python -V  # Print out python version for debugging
   - pip install pipenv
@@ -34,3 +34,6 @@ pages:
     - public/
   only:
   - master
+
+after_script:
+  - mkdir -p .cache

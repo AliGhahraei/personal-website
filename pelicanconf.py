@@ -55,6 +55,7 @@ SOCIAL = (
 #Theme
 USER_THEME_PATH = expanduser(environ['PELICAN_THEMES_PATH'])
 THEME_NAME = 'nest'
+THEME_REMOTE = 'https://github.com/molivier/nest'
 THEME = join(USER_THEME_PATH, THEME_NAME)
 
 NEST_CSS_MINIFY = True

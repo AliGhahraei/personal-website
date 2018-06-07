@@ -3,7 +3,7 @@
 from os import environ
 from os.path import dirname
 
-from sh import cd, git, mkdir, rm
+from sh import cd, git, mkdir, rm, echo
 
 from publishconf import THEME_NAME, THEME_REMOTE
 
@@ -25,7 +25,7 @@ def clone_or_pull(repo_name, url, rm_on_clone=False):
     :param url: URL to be used if cloning is needed
     :param rm_on_clone: whether to delete files in the current directory when cloning
     """
-    print(f'Clone or pull {repo_name}')
+    echo(f'Clone or pull {repo_name}')
 
     try:
         cd(repo_name)

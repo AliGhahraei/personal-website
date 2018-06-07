@@ -18,9 +18,9 @@ def clone_or_pull(repo_name, url, rm_on_clone=False):
     except FileNotFoundError:
         if rm_on_clone:
             rm('-rf', '*')
-        git('clone', url, repo_name)
+        git('clone', url, repo_name, _fg=True)
     else:
-        git('pull')
+        git('pull', _fg=True)
 
 
 mkdir('-p', THEMES_PATH)

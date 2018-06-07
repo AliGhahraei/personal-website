@@ -17,12 +17,12 @@ cache:
 
 before_script:
   - apt -qq update
-  - apt -q install -y emacs25
+  - apt -qq install -y emacs25
 
   - python -V  # Print out python version for debugging
   - pip install pipenv
   - pipenv install --ignore-pipfile
-  - ./clone_or_pull_pelican_dirs.py
+  - pipenv run ./clone_or_pull_pelican_dirs.py
 
 pages:
   stage: deploy

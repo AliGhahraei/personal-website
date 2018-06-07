@@ -25,7 +25,7 @@ def clone_or_pull(repo_name, url, rm_on_clone=False):
     :param url: URL to be used if cloning is needed
     :param rm_on_clone: whether to delete files in the current directory when cloning
     """
-    echo(f'Clone or pull {repo_name}')
+    echo(f'Clone or pull {repo_name}', _fg=True)
 
     try:
         cd(repo_name)

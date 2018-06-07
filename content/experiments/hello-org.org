@@ -1,6 +1,6 @@
 #+TITLE: Hello Pelican (Org)
 #+DATE: 2018-03-20
-#+PROPERTY: SUMMARY THis is a test article using Org. Hello, Pelican!
+#+PROPERTY: SUMMARY This is a test article using Org. Hello, Pelican!
 
 This is a test article using Org. Hello, Pelican!
 

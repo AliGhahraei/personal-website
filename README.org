@@ -1,4 +1,4 @@
-* AliGhahraei.github.io
+* AliGhahraei.gitlab.io
 Personal website powered by [[https://blog.getpelican.com/][Pelican]].
 
 ** Requirements

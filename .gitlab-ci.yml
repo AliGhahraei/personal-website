@@ -33,6 +33,3 @@ pages:
     - public/
   only:
   - master
-
-after_script:
-  - mkdir -p .cache

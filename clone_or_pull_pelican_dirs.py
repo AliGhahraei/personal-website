@@ -1,4 +1,4 @@
-#!/usr/binv/env python3
+#!/usr/bin/env python3
 from os import environ
 from os.path import dirname
 

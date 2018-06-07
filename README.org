@@ -3,12 +3,13 @@ Personal website powered by [[https://blog.getpelican.com/][Pelican]].
 
 ** Requirements
 - [[https://www.python.org/][Python 3]]
-- [[https://www.gnu.org/software/emacs/][Emacs]] (for Org-mode files)
+- [[https://www.gnu.org/software/emacs/][Emacs]] (for processing Org-mode files)
 - [[https://docs.pipenv.org/][Pipenv]]
 
 ** Installation and usage
 Set the PELICAN_THEMES_PATH and PELICAN_PLUGINS_PATH environment variables in your shell. If you
-don't have any of these, you should clone [[https://github.com/getpelican/pelican-themes][the pelican themes]] and [[https://github.com/getpelican/pelican-plugins][the pelican plugins]] repositories.
+don't have any of these directories, you should clone [[https://github.com/getpelican/pelican-themes][the pelican themes]] and [[https://github.com/getpelican/pelican-plugins][the pelican plugins]]
+repositories.
 
 To install dependencies just run the following:
 #+BEGIN_SRC

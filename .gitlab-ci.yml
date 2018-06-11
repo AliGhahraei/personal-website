@@ -17,7 +17,7 @@ cache:
 
 before_script:
   - apt -qq update
-  - apt -qq install emacs25
+  - apt -qq install -y emacs25
 
   - python -V  # Print out python version for debugging
   - pip install pipenv

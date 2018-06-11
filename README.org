@@ -7,7 +7,7 @@ Personal website powered by [[https://blog.getpelican.com/][Pelican]].
 - [[https://docs.pipenv.org/][Pipenv]]
 
 ** Installation and usage
-Set the PELICAN_THEMES_PATH and PELICAN_PLUGINS_PATH environment variables in your shell. If you
+Set the =PELICAN_THEMES_PATH= and =PELICAN_PLUGINS_PATH= environment variables in your shell. If you
 don't have any of these directories, you should clone [[https://github.com/getpelican/pelican-themes][the pelican themes]] and [[https://github.com/getpelican/pelican-plugins][the pelican plugins]]
 repositories.
 

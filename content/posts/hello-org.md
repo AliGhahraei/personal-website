@@ -1,7 +1,7 @@
 +++
 title = "Hello Hugo (Org)"
 author = ["Ali Ghahraei Figueroa"]
-lastmod = 2022-02-02T08:28:49-06:00
+lastmod = 2022-02-02T09:46:14-06:00
 tags = ["experiments"]
 draft = false
 weight = 2001
@@ -21,7 +21,7 @@ This is a test article using Org. Hello, Hugo!
 
 #### <span class="org-todo done DONE">DONE</span> Something done {#something-done}
 
-And a table unapologetically stolen from [The Org Manual](https://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor)
+And a table unapologetically stolen from [The Org Manual](https://orgmode.org/manual/Built_002din-Table-Editor.html)
 
 | Name  | Phone | Age |
 |-------|-------|-----|

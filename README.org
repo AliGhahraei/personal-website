@@ -1,17 +1,17 @@
 * AliGhahraei.gitlab.io
-Personal website powered by [[https://blog.getpelican.com/][Pelican]].
+Personal website
 
 ** Requirements
-- [[https://www.python.org/][Python 3]]
-- [[https://www.gnu.org/software/emacs/][Emacs]] (for processing Org-mode files)
-- [[https://docs.pipenv.org/][Pipenv]]
+- [[https://gohugo.io][Hugo]]
+- [[https://www.gnu.org/software/emacs/][Emacs]] (for processing Org-mode files) and [[https://ox-hugo.scripter.co/][ox-hugo]]
 
-** Installation and usage
-Set the =PELICAN_THEMES_PATH= and =PELICAN_PLUGINS_PATH= environment variables in your shell. If you
-don't have any of these directories, you should clone [[https://github.com/getpelican/pelican-themes][the pelican themes]] and [[https://github.com/getpelican/pelican-plugins][the pelican plugins]]
-repositories.
+** Usage
+To generate Markdown files (used by Hugo) from content-org/posts.org, use the
+export functionality provided by ox-hugo.
 
-To install dependencies just run the following:
-#+BEGIN_SRC
-$ pipenv install
+To run the page locally:
+#+BEGIN_SRC shell
+$ hugo server -D
 #+END_SRC
+
+To publish the site, just push to generate and deploy artifacts

@@ -1,0 +1,70 @@
+baseURL = 'alighahraei.gitlab.io'
+languageCode = 'en-us'
+title = 'Me + Programming'
+theme = ["github.com/luizdepra/hugo-coder"]
+
+defaultcontentlanguage = "en"
+
+paginate = 20
+
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "forgottendev"
+
+[params]
+  author = "Ali Ghahraei Figueroa"
+  info = "I'm a Software Engineer who loves Linux, open source software and the web"
+  #description = "John Doe's personal website"
+  keywords = "blog,developer,personal"
+  #avatarurl = "images/avatar.jpg"
+  gravatar = "aligf94@gmail.com"
+
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  since = 2018
+
+  # enableTwemoji = true
+
+  colorScheme = "dark"
+  hidecolorschemetoggle = false
+
+  #customCSS = ["css/custom.css"]
+  #customSCSS = ["scss/custom.scss"]
+  #customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Mail"
+  icon = "fa fa-envelope fa-2x"
+  weight = 1
+  url = "mailto:aligf94@gmail.com"
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-linkedin-square fa-2x"
+  weight = 1
+  url = "https://www.linkedin.com/in/ali-ghahraei-figueroa-89836091/"
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 2
+  url = "https://github.com/AliGhahraei/"
+[[params.social]]
+  name = "Gitlab"
+  icon = "fa fa-gitlab fa-2x"
+  weight = 3
+  url = "https://gitlab.com/alighahraei/"
+
+# Menu links
+[[menu.main]]
+  name = "Posts"
+  weight = 1
+  url  = "posts/"

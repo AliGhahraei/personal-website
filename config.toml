@@ -1,4 +1,4 @@
-baseURL = 'alighahraei.gitlab.io'
+baseURL = 'https://alighahraei.gitlab.io'
 languageCode = 'en-us'
 title = 'Me + Programming'
 theme = ["github.com/luizdepra/hugo-coder"]

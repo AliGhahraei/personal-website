@@ -68,3 +68,8 @@ disqusShortname = "alighahraei"
   name = "Posts"
   weight = 1
   url  = "posts/"
+
+[[menu.main]]
+  name = "Tags"
+  weight = 2
+  url  = "tags/"

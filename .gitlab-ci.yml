@@ -1,8 +1,9 @@
+-image: golang:latest
+
 before_script:
-  - apt -qq update
-  - apt -qq install -y hugo
+  - apt-get -qq update
+  - apt-get -qq install -y hugo
   - hugo version
-  - apt -qq install -y golang-go
   - go version
 
 pages:

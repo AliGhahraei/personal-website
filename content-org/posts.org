@@ -1,3 +1,4 @@
+#+STARTUP: overview
 #+hugo_base_dir: ../
 #+hugo_weight: auto
 #+hugo_auto_set_lastmod: t

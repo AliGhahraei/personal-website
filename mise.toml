@@ -2,6 +2,7 @@
 update = 'hugo mod get -u ./...'
 server = 'hugo server -D'
 ci = 'hugo --gc --minify'
+local_ci = 'gitlab-ci-local pages'
 
 [tools]
 go = "latest"

@@ -1,5 +1,7 @@
 [tasks]
 update = 'hugo mod get -u ./...'
+server = 'hugo server -D'
+ci = 'hugo --gc --minify'
 
 [tools]
 go = "latest"

@@ -1,15 +1,15 @@
-image: golang:latest
+image: debian:bookworm-20250520-slim
 
 before_script:
   - apt-get -qq update
-  - apt-get -qq install -y hugo
-  - hugo version
-  - go version
 
+  # Install mise & its tools
+  - curl https://mise.run | sh
+  - mise install
 pages:
   stage: deploy
   script:
-  - hugo
+  - mise ci
   artifacts:
     paths:
     - public/

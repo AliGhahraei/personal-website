@@ -11,7 +11,7 @@ export functionality provided by ox-hugo (C-c C-e H H when you're in the correct
 
 To run the page locally:
 #+BEGIN_SRC shell
-$ hugo server -D
+$ mise server
 #+END_SRC
 
 To publish the site, just push to generate and deploy artifacts

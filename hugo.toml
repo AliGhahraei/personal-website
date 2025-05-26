@@ -1,17 +1,20 @@
-baseURL = 'https://alighahraei.gitlab.io'
-languageCode = 'en-us'
+baseurl = 'https://alighahraei.gitlab.io'
+languagecode = 'en-us'
 title = 'Me + Programming'
-theme = ["github.com/luizdepra/hugo-coder"]
-
+theme = "github.com/luizdepra/hugo-coder"
 defaultcontentlanguage = "en"
+ignorelogs = ['warning-goldmark-raw-html']
 
-paginate = 20
 
-pygmentsstyle = "monokai"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+[pagination]
+pagerSize = 20
 
-disqusShortname = "alighahraei"
+[services]
+[services.disqus]
+shortname = "alighahraei"
+
+[markup.highlight]
+style = "monokai"
 
 [params]
   author = "Ali Ghahraei Figueroa"
@@ -51,7 +54,7 @@ disqusShortname = "alighahraei"
   name = "Github"
   icon = "fa fa-linkedin-square fa-2x"
   weight = 1
-  url = "https://www.linkedin.com/in/ali-ghahraei-figueroa-89836091/"
+  url = "https://www.linkedin.com/in/ali-ghahraei-figueroa/"
 [[params.social]]
   name = "Github"
   icon = "fa fa-github fa-2x"
@@ -73,3 +76,7 @@ disqusShortname = "alighahraei"
   name = "Tags"
   weight = 2
   url  = "tags/"
+
+[module]
+  [[module.imports]]
+    path = 'github.com/luizdepra/hugo-coder'

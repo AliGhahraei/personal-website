@@ -1,0 +1,6 @@
+[tasks]
+update = 'hugo mod get -u ./...'
+
+[tools]
+go = "latest"
+hugo-extended = "latest"

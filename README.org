@@ -7,7 +7,7 @@ Personal website
 
 ** Usage
 To generate Markdown files (used by Hugo) from content-org/posts.org, use the
-export functionality provided by ox-hugo.
+export functionality provided by ox-hugo (C-c C-e H H when you're in the correct subtree).
 
 To run the page locally:
 #+BEGIN_SRC shell

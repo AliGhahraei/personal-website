@@ -2,8 +2,11 @@ image: debian:bookworm-20250520-slim
 
 before_script:
   - apt-get -qq update
+  - apt-get -qq install curl
+  - apt-get -qq install git
 
   # Install mise & its tools
+  - export PATH="$PATH:/root/.local/bin"
   - curl https://mise.run | sh
   - mise install
 pages:

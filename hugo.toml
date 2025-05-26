@@ -1,6 +1,6 @@
 baseurl = 'https://alighahraei.gitlab.io'
 languagecode = 'en-us'
-title = 'Me + Programming'
+title = 'Ali Ghahraei'
 theme = "github.com/luizdepra/hugo-coder"
 defaultcontentlanguage = "en"
 ignorelogs = ['warning-goldmark-raw-html']
